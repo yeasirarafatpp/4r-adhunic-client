@@ -1,8 +1,13 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
 import doctorImg from '../../images/doctors.jpg';
 
 const Doctors = () => {
+    const history = useHistory();
+    const seeDoc = () => {
+        history.push('/doctors')
+    }
     return (
         <>
             <div className="text-center pt-5">
@@ -46,7 +51,7 @@ const Doctors = () => {
                     </div>
                 </div>
                 <div className='pt-3 text-center'>
-                    <button className='btn btn-success'>See All Doctors</button>
+                    <button onClick={seeDoc} className='btn btn-success'>See All Doctors</button>
                 </div>
             </div>
         </>

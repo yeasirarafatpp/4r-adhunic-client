@@ -1,8 +1,13 @@
 import React from 'react';
 import doctor from '../../images/doctor-choose.jpg'
 import { Button, Col, Container, Row } from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
 
 const WhyUs = () => {
+    const history = useHistory();
+    const seeADoc = () => {
+        history.push('/doctors')
+    }
     return (
         <>
             <div className="text-center pt-5">
@@ -14,7 +19,7 @@ const WhyUs = () => {
                     <Col sm={12} md={6}>
                         <h2 className='text-primary'>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ex asperiores beatae rerum incidunt atque? Aliquid officiis optio, accusantium omnis exercitationem cum pariatur! Fugiat quisquam, dolores recusandae veniam nobis sunt!</p>
-                        <Button variant="info">Our Doctors</Button>
+                        <Button onClick={seeADoc} variant="info">Our Doctors</Button>
                     </Col>
                     <Col sm={12} md={6}>
                         <img className='img-fluid rounded-2' src={doctor} alt="Doctor" />
