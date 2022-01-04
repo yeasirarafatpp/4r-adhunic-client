@@ -1,13 +1,22 @@
 import { faEnvelope, faPhone, faRocket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useRef } from 'react';
 import { Form } from 'react-bootstrap';
 import Iframe from 'react-iframe';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const form = useRef();
+
     const handleSubmit = (e) => {
         e.preventDefault();
-
+        emailjs.sendForm('service_ql2d568', 'template_376ntrc', form.current, 'user_jKTnLgZg7n0kHPzmLnlcQ')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
     }
     return (
         <>
@@ -15,20 +24,20 @@ const Contact = () => {
                 <div className='row py-3'>
                     <div className='col-sm-12 col-md-7 col-xl-7'>
                         <h4>Give ua a Message</h4>
-                        <Form onSubmit={handleSubmit}>
+                        <Form ref={form} onSubmit={handleSubmit}>
                             <Form.Group className="mb-3" controlId="nameInfo">
                                 <Form.Label>First Name<span className='text-secondary'>(required)</span> </Form.Label>
-                                <Form.Control type="text" required placeholder="First Name" />
+                                <Form.Control type="text" name="user_first_name" required placeholder="First Name" />
                                 <Form.Label>Last Name<span className='text-secondary'>(required)</span> </Form.Label>
-                                <Form.Control type="text" required placeholder="Last Name" />
+                                <Form.Control type="text" name="user_last_name" required placeholder="Last Name" />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="email">
                                 <Form.Label>Email address<span className='text-secondary'>(required)</span> </Form.Label>
-                                <Form.Control type="email" required placeholder="Enter Email" />
+                                <Form.Control type="email" name="user_email" required placeholder="Enter Email" />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="message">
                                 <Form.Label>Your Message</Form.Label>
-                                <Form.Control as="textarea" placeholder='Type Here' rows={4} />
+                                <Form.Control as="textarea" name="user_message" placeholder='Type Here' rows={4} />
                             </Form.Group>
                             <button className='btn btn-primary' type='submit'>Send</button>
                         </Form>
