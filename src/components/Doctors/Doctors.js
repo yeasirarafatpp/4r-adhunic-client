@@ -2,6 +2,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import doctorImg from '../../images/doctors.jpg';
+import drRezul from '../../images/dr-rezaul.jpg';
 
 const Doctors = () => {
     const history = useHistory();
@@ -18,11 +19,16 @@ const Doctors = () => {
                 <div className='row'>
                     <div className='col-md-4 col-sm-6 col-xl-4'>
                         <Card >
-                            <Card.Img variant="top" src={doctorImg} />
+                            <Card.Img variant="top" src={drRezul} />
                             <Card.Body>
-                                <Card.Title>Doctor Name</Card.Title>
+                                <Card.Title>ডাঃ মোঃ রেজাউল করিম</Card.Title>
                                 <Card.Text>
-                                    Details About Doctor
+                                    এমএবিবিএস/এমডি <br />
+                                    ডক্টর অব মেডিসিন(রাশিয়া)<br />
+                                    সিসিডি(বারডেম)<br />
+                                    সিসিডি(হার্ট ফাউন্ডেশন, ঢাকা, বাংলাদেশ)<br />
+                                    স্পেশালিষ্ট ইন জেনারেল মেডিসিন ও ডায়াবেটিওলজিস্ট<br />
+                                    বিএমডিসি রেঃজিঃ- ১৮৯৫৮
                                 </Card.Text>
                             </Card.Body>
                         </Card>

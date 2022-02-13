@@ -47,17 +47,25 @@ const Contact = () => {
                         <hr />
                         <div className='d-flex'>
                             <FontAwesomeIcon icon={faRocket} className='text-secondary inline h5'></FontAwesomeIcon>
-                            <span>&nbsp; No: Doctor Bari, Gondogram, Banani, Bogura</span>
+                            <span>&nbsp; Daktar Bari, Gondogram, Banani, Bogura</span>
                         </div>
                         <hr />
                         <div className='d-flex'>
                             <FontAwesomeIcon icon={faPhone} className='text-secondary inline h5'></FontAwesomeIcon>
-                            <span>&nbsp; Phone : <a className='text-decoration-none' href="tel:01819298991">01819298991</a> </span>
+                            <span>&nbsp; Phone : &nbsp;
+                                <a className='text-decoration-none' href="tel:01979298992">01979-298992</a>, &nbsp;
+                                <a className='text-decoration-none' href="tel:01971298994">01971-298994</a>, &nbsp;
+                                <a className='text-decoration-none' href="tel:01819298991">01819-298991</a>
+                            </span>
                         </div>
                         <hr />
                         <div className='d-flex'>
                             <FontAwesomeIcon icon={faEnvelope} className='text-secondary inline h5'></FontAwesomeIcon>
-                            <span>&nbsp; Email : <a className='text-decoration-none' href="mailto:drezaulkarim123@gmail.com">drezaulkarim123@gmail.com</a> </span>
+                            <div>
+                                <span>&nbsp; Email : <a className='text-decoration-none' href="mailto:drezaulkarim123@gmail.com">drezaulkarim123@gmail.com</a> </span>
+                                <br />
+                                <span>&nbsp; Email : <a className='text-decoration-none' href="mailto:drezaulkarim@yahoo.com">drezaulkarim@yahoo.com</a> </span>
+                            </div>
                         </div>
                     </div>
                 </div>

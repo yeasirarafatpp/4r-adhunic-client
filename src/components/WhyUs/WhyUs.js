@@ -12,13 +12,13 @@ const WhyUs = () => {
         <>
             <div className="text-center pt-5">
                 <h2>Why Choose Us?</h2>
-                <p>we have best doctors</p>
+                <p>আধুনিকের ছোয়া <br /> ফোর আর আধুনিক হাসপাতাল</p>
             </div>
             <Container>
                 <Row className='align-items-center py-4'>
                     <Col sm={12} md={6}>
-                        <h2 className='text-primary'>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ex asperiores beatae rerum incidunt atque? Aliquid officiis optio, accusantium omnis exercitationem cum pariatur! Fugiat quisquam, dolores recusandae veniam nobis sunt!</p>
+                        <h2 className='text-primary'>ইহা হাসপাতাল নাহ। ইহা একটা বাড়ী</h2>
+                        <p>ফোর আর আধুনিক হাসপাতাল- একটি বাড়ী, এখানে বাড়ীর মত যত্ন নেওয়া হয় রোগীদের। ইহা একটি ব্যতিক্রম সামাজিক মুনাফাহীন হাসপাতাল। শিশু ও মৃত্যুহার কমানো এই হাসপাতালের মূল লক্ষ্য।</p>
                         <Button onClick={seeADoc} variant="info">Our Doctors</Button>
                     </Col>
                     <Col sm={12} md={6}>

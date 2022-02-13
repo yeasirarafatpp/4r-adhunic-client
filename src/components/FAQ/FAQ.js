@@ -10,87 +10,33 @@ const FAQ = () => {
                     <h1>FAQ</h1>
                     <Accordion defaultActiveKey={['0']} alwaysOpen>
                         <Accordion.Item eventKey="0">
-                            <Accordion.Header>Question 1</Accordion.Header>
+                            <Accordion.Header>কি কি অপারেশন হয় আপনাদের হাসপাতালে? </Accordion.Header>
                             <Accordion.Body>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.
+                                ওপেন হার্ট অপারেশন ছাড়া বাকি সব ধরনের অপারেশন যেমন সিজার, এপেনডিক্স, টনসিল, হার্নিয়া, পিত্তথলির পাথর, কিডনির পাথর অপারেশন, জরায়ুর অপারেশন ইত্যাদি
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="1">
-                            <Accordion.Header>Question 2</Accordion.Header>
+                            <Accordion.Header>কি কি ধরনের পরীক্ষা হয়?</Accordion.Header>
                             <Accordion.Body>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.
+                                এখানে সব ধরনের পরীক্ষা হয়।
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="2">
-                            <Accordion.Header>Question 3</Accordion.Header>
+                            <Accordion.Header>সিজারে কত টাকা লাগে এই হাসপাতালে?</Accordion.Header>
                             <Accordion.Body>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.
+                                গরীব, অসহায়, স্বল্প আয়ের গর্ভবতীদের জন্য মাত্র ৭৭০০ টাকায়। প্যাকেজের আওতায়।
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="3">
-                            <Accordion.Header>Question 4</Accordion.Header>
+                            <Accordion.Header>সব সময় ডাক্তার পাওয়া যায়?</Accordion.Header>
                             <Accordion.Body>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.
+                                হ্যা সব সময় এই হাসপাতালে একজন সিনিয়র কনসালট্যান্ট ডাক্তার থাকেন। ২৪ ঘন্টা।
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="4">
-                            <Accordion.Header>Question 5</Accordion.Header>
+                            <Accordion.Header>হাসপাতালের পরিবেশ কেমন?</Accordion.Header>
                             <Accordion.Body>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.
-                            </Accordion.Body>
-                        </Accordion.Item>
-                        <Accordion.Item eventKey="5">
-                            <Accordion.Header>Question 6</Accordion.Header>
-                            <Accordion.Body>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.
-                            </Accordion.Body>
-                        </Accordion.Item>
-                        <Accordion.Item eventKey="6">
-                            <Accordion.Header>Question 7</Accordion.Header>
-                            <Accordion.Body>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.
+                                বগুড়ার অন্যসব বেসরকারি হাসপাতালের চেয়ে এই হাসপাতাল গন্ধহীন, মনোরম পরিবেশ, ঝকঝকে পরিষ্কার ও পরিচ্ছন্ন। প্রত্যেক রোগীর জন্য আলাদা পরিষ্কার টয়লেট ও গরম পানির ব্যবস্থা যা বগুড়ার অন্য কোন হাসপাতালে নেই।
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>
